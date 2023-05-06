@@ -27,5 +27,11 @@ date
       }
     }
 
+    stage('deploy') {
+      steps {
+        echo 'this is deploy message'
+      }
+    }
+
   }
 }
