@@ -11,8 +11,19 @@ date
     }
 
     stage('build') {
-      steps {
-        echo 'hello build'
+      parallel {
+        stage('build') {
+          steps {
+            echo 'hello build'
+          }
+        }
+
+        stage('build-test') {
+          steps {
+            echo 'hello this is build test'
+          }
+        }
+
       }
     }
 
