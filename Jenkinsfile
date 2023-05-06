@@ -29,7 +29,7 @@ date
 
     stage('deploy') {
       steps {
-        echo 'this is deploy message'
+        echo 'this is deploy message.'
       }
     }
 
