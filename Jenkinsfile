@@ -10,5 +10,11 @@ date
       }
     }
 
+    stage('build') {
+      steps {
+        echo 'hello build'
+      }
+    }
+
   }
 }
